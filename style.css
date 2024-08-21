@@ -1,0 +1,316 @@
+header {
+    background-color: #000000;
+    padding: 5px 0;
+width: 100%;
+height: 150px;
+
+}
+
+.imagen{
+    width: 270px;
+    height: 130px;
+    padding-top: 1%;
+}
+
+.fondo{
+    position: relative;
+    width: 100%;
+    height: 62%;
+}
+
+
+.search-container {
+    text-align:right;
+    margin-top: 20px;
+}
+
+.search-container form {
+    position: absolute;
+    top:55px;
+    left: 80%;
+}
+.search-container input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #c7c70b;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #cec9c9;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #c7c70b;
+}
+
+  .navbar {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'monaco';
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: rgb(183, 183, 183);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: #585858;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Columnas */
+.column {
+    flex: 1;
+    padding: 10px;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+/* Ventanas de información */
+.info-box {
+    background-color: #f4f4f4;
+    border: 1px solid #e7e6e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.info-box h2 {
+    margin-top: 0;
+}
+
+.info-box p {
+    margin: 0;
+}
+/* Imágenes dentro de las ventanas de información */
+.info-image {
+    max-width: 100%;
+    height: 30%;
+padding-left: 20%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .column {
+        max-width: 100%;
+    }
+}
+.letra{
+    font-family:'Times New Roman';
+    color: #000000;
+    text-align:center;
+    font-size: 30px;
+}
+.titu{
+    font-family: Impact;
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+}
+.image{
+    max-width: 100%;
+    height: 30%;
+ 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.histori{
+    font-family:'Times New Roman';
+    color: #000000;
+    text-align:justify;
+    font-size: 30px;
+}
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: rgb(255, 255, 255);
+}
+
+.redes-sociales li {
+    margin-right: 10px; /* Espacio entre iconos */
+}
+
+.redes-sociales li img {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    border-radius: 30%; /* Para hacer los iconos redondos, opcional */
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 350px;
+    height: 15%;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+/*carucel de imagenes*/
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.carousel-dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-dots .active {
+    background-color: #333;
+}
+/* Estilos para los encabezados y párrafos */
+h2.titu, p.letra, p.histori {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Cambiar color y añadir animación al pasar el ratón */
+h2.titu:hover, p.letra:hover, p.histori:hover {
+    color: #ff6600; /* Cambia el color según tu preferencia */
+    transform: scale(1.05); /* Aumenta un poco el tamaño del texto */
+}
+
+/* Estilos para los enlaces */
+.navbar a:hover, .carousel-dots span:hover {
+    color: #ff6600; /* Cambia el color según tu preferencia */
+    text-decoration: underline; /* Subraya el texto al pasar el ratón */
+}
+
+/* Estilo para los puntos del carrusel */
+.carousel-dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dots span:hover {
+    background-color: #ff6600; /* Cambia el color según tu preferencia */
+}
+/* Estilos generales para imágenes */
+img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto hover para imágenes */
+img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
+    filter: brightness(0.8); /* Ajusta el brillo para un efecto de oscurecimiento */
+}
+
+/* Efecto hover para imágenes en el carrusel */
+.carousel-images img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.carousel-images img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen en el carrusel */
+    filter: brightness(0.9); /* Ajusta el brillo para un efecto de oscurecimiento en el carrusel */
+}

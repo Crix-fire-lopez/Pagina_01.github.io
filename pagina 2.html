@@ -1,0 +1,117 @@
+<!DOCTYPE html >
+<link rel="icon" href="motos/logoooooooo.png">
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Nuestras Motos </title>
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="style.css">
+   
+    </head>
+    <body>
+        <header>
+            <link rel="stylesheet" href="reset.css/reset.css">
+            <img class="imagen" src="motos/kawasaki.jpg">
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pagina 3.html">Nuestras Motos</a></li>
+                    <li><a href="pagina 2.html">Nosotros</a></li>
+                    <li><a href="página4.html">Contacto</a></li>
+                </ul>
+                   </nav>
+                 <div class="search-container">
+                     <form action="/buscar" method="GET">
+                     <input type="text" placeholder="Buscar..." name="busqueda">
+                      <button type="submit">Buscar</button>
+                      </form>
+                   </div>
+        </header>
+        <div class="container">
+            <div class="column">
+                <div class="info-box">
+                    <h2 class="titu">Misión</h2>
+                    <p class="letra">"Hacer maquinas cada vez más humanas y controlables para poder explotar al máximo todas las prestaciones que ofrecen los motores Kawasaki.
+                        Nuestro objetivo principal: Disfrutar del placer de conducir."</p>
+                </div>
+                <div class="info-box">
+                    <h2 class="titu">Visión</h2>
+                    <p class="letra">"Ser los mejores en el segmento en el que competimos a través de un crecimiento rentable, brindando a nuestros clientes un servicio de excelencia 100% personalizado con experto profesionales logrando así toda una experiencia de compra."</p>
+                </div>
+                <div class="info-box">
+                    <img class="image"  src="motos/DSC_8579-1024x730.jpg">
+                </div><div class="info-box">
+                    <img class="info-image" src="motos/Shozo Kawasaki.jpg">
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="info-box">
+                    <h2 class="titu">Historia</h2>
+                    <p class="histori">Todo empezó en unos astilleros navales en 1878 de la mano de Shozo Kawasaki.
+                        A día de hoy, KAWASAKI HEAVY INDUSTRIES es una gran compañía industrial con presencia global que opera en diversos mercados, siempre con el foco puesto en la creación y aplicación de las más avanzadas tecnologías.
+                         
+                        La producción a gran escala de motos comenzó hace más de cincuenta años. Nuestro primer motor para motocicleta fue diseñado basándonos en el conocimiento adquirido gracias a la fabricación y desarrollo de motores de avión.
+                         
+                        Nuestra entrada en la industria de la moto fue posible gracias al esfuerzo constante de Kawasaki por desarrollar nuevas tecnologías. Con el paso de los años hemos llegado a crear un gran número de modelos que han contribuido a crear un exitoso mercado y, de paso, aportar algunas de las motos más legendarias. En 1996 fabricamos 10 millones de vehículos, una muestra de la capacidad de Kawasaki para responder a las necesidades de nuestros consumidores. De este modo, mientras tratamos de seguir dando lo mejor que tenemos, nuestros próximos retos se convertirán seguramente en nuevas leyendas.
+                         
+                         
+                        ¡La mía es Kawasaki!
+                        
+                        Aeroespacial
+                        Construcción naval
+                        Componentes y material rodante
+                        Plantas energéticas e industriales
+                        Equipo industrial
+                        Infraestructuras
+                        Productos de ocio
+                        Kawasaki Heavy Industries, Ltd (KHI) está llamado a construir los más avanzados sistemas de transporte del siglo XXI, basándose en los más de 100 años de experiencia en el sector. La división de construcción naval ha sido líder mundial en fabricar los barcos más avanzados, rápidos y automatizados. Además, siempre se han buscado alternativas para aumentar la eficiencia optimizando al máximo el consumo. Todo ello se ha traducido en el desarrollo de cargueros y barcos de alta velocidad alimentados por Gas Natural Líquido (LNG), además de muchas otras nuevas tecnologías orientadas al uso marítimo.</p>
+                </div>
+        <!-- Carrusel de imágenes -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="motos/Kawasaki Ninja gris.png" alt="Imagen 1">
+                <img src="motos/blanca.jpg" alt="Imagen 2">
+                <img src="motos/moradita.jpg" alt="Imagen 3">
+                <!-- Añade más imágenes según sea necesario -->
+            </div>
+            <div class="carousel-dots">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <!-- Añade más puntos según el número de imágenes -->
+            </div>
+        </div>
+    
+        <script>
+            // Script para el carrusel de imágenes
+            let index = 0;
+            const images = document.querySelectorAll('.carousel-images img');
+            const dots = document.querySelectorAll('.carousel-dots span');
+            const totalImages = images.length;
+    
+            function showNextImage() {
+                index = (index + 1) % totalImages;
+                document.querySelector('.carousel-images').style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[index].classList.add('active');
+            }
+    
+            setInterval(showNextImage, 3000); // Cambiar imagen cada 3 segundos
+        </script>
+  </body> 
+
+</html>  
+     <!--ul class="redes-sociales">
+            <li><a href="https://www.facebook.com/Kawasaki.Guatemala/" target="_blank"><img src="LOGOS/FACABOOK.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/kawasaki_mexico/" target="_blank"><img src="LOGOS/R.png" alt="Instagram"></a></li>
+            <li><a href="https://es.linkedin.com/company/kawasaki-motors-espa%C3%B1a" target="_blank"><img src="LOGOS/linkedin-png-linkedin-icon-1600.png" alt="linkedin"></a></li>
+            <!-- Agrega más iconos aquí según sea necesario -->
+        <!--/ul>  
+    
+
+       
+  
+

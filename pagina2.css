@@ -1,0 +1,180 @@
+
+.imagen{
+    width: 270px;
+    height: 150px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 5px 0;
+width: 100%;
+height: 150px;
+}
+
+.navbar {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'monaco';
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: rgb(183, 183, 183);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+    background-color:  #585858;
+    border-radius: 5px;
+    color: #ff6600; /* Cambia el color según tu preferencia */
+    transform: scale(1.05); /* Aumenta un poco el tamaño del texto */
+    color: #ff6600; /* Cambia el color según tu preferencia */
+    text-decoration: underline; /* Subraya el texto al pasar el ratón */
+}
+
+
+.video{
+
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
+    
+}
+ 
+    /*.search-container {
+        text-align:right;
+        margin-top: 20px;
+    }*/
+    
+    .search-container form {
+        position: absolute;
+        top:55px;
+        left: 80%;
+    }
+    .search-container input[type=text] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px 0 0 5px;
+        width: 200px;
+    }
+    
+    .search-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 1px solid #c7c70b;
+        border-left: none;
+        border-radius: 0 5px 5px 0;
+        background-color: #cec9c9;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    .search-container button:hover {
+        background-color: #c7c70b;
+    }
+
+    .productos{
+        width: 940px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+    .productos li{
+        display: inline-block;
+        text-align: center; 
+        width: 30%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 3px solid #ffffff;
+    
+        border-radius: 10px 10px 10px 10px;
+    }
+    
+    .productos li:hover{
+        border-color:#c78c19;
+    }
+    .productos li:active{
+        border-color:  #088C19;
+       
+    }
+    
+    .productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    }
+    
+    .productos li:hover h2{
+        font-size:33px;
+    }
+    
+
+    
+    .imagenes{
+            width: 150px;
+            height: 155px;
+    }
+
+    .fondo{
+        background: #000000;
+        position: absolute;
+    }
+    .redes-sociales {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .redes-sociales {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .redes-sociales li {
+        margin-right: 10px; /* Espacio entre iconos */
+    }
+    
+    .redes-sociales li img {
+        width: 150px; /* Ajusta el tamaño según tus necesidades */
+        height: auto;
+        border-radius: 30%; /* Para hacer los iconos redondos, opcional */
+    }
+
